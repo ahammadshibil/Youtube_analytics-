@@ -11,6 +11,7 @@ import seaborn as sns
 import pycountry
 import plotly.figure_factory as ff
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Define YouTube color palette
 yt_red = '#FF0000'
