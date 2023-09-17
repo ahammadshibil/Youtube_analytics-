@@ -110,11 +110,11 @@ def plot_histogram(data, metric, position, title):
 
 def load_data():
     # Read CSV files
-    df_agg = pd.read_csv('/home/shibil/Annual report/Streamlit/Aggregated_Metrics_By_Video.csv').iloc[1:,:]
-    df_agg_sub = pd.read_csv('/home/shibil/Annual report/Streamlit/Aggregated_Metrics_By_Country_And_Subscriber_Status.csv')
-    df_comments = pd.read_csv('/home/shibil/Annual report/Streamlit/Aggregated_Metrics_By_Video.csv')
-    df_all_comments = pd.read_csv('/home/shibil/Annual report/Streamlit/All_Comments_Final.csv')
-    df_time = pd.read_csv('/home/shibil/Annual report/Streamlit/Video_Performance_Over_Time.csv')
+    df_agg = pd.read_csv('Aggregated_Metrics_By_Video.csv').iloc[1:,:]
+    df_agg_sub = pd.read_csv('Aggregated_Metrics_By_Country_And_Subscriber_Status.csv')
+    df_comments = pd.read_csv('Aggregated_Metrics_By_Video.csv')
+    df_all_comments = pd.read_csv('All_Comments_Final.csv')
+    df_time = pd.read_csv('Video_Performance_Over_Time.csv')
     
     # Rename columns
     df_agg.columns = ['Video', 'Video title', 'Video publish time', 'Comments added', 'Shares', 'Dislikes', 'Likes', 
